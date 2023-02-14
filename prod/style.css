@@ -1,0 +1,62 @@
+* { 
+  margin: 0; 
+  padding: 0.2%; 
+  --dark: #121212;
+  --light: gainsboro;
+  --accent: blue;
+}
+
+body {
+  font-size: 13px;
+  font-family: MS gothic;
+  color: var(--dark);
+  background: var(--light);
+  position: relative;
+}
+
+section {
+  padding-top: 5vw;
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 80vh;
+  background: var(--light);
+}
+
+section:target { 
+  display: block;
+}
+
+section#home { 
+  display: block;
+}
+
+header {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--accent);
+}
+
+a:hover {
+  background: var(--dark);
+  color: var(--light);
+}
+
+h1 {
+  all: unset;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.pixel {
+  width: 0.6em;
+  align-self: center;
+}
